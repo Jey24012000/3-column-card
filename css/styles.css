@@ -1,0 +1,122 @@
+:root{
+    /*
+    Primary colors
+    */
+    --background-section-sedans: hsl(31, 77%, 52%);
+    --background-section-suvs: hsl(184, 100%, 22%);
+    --background-section-luxury: hsl(179, 100%, 13%);
+
+    /*
+    Secondary colors
+    */
+    --paragraphs-transparent: hsla(0, 0%, 100%, 0.75);
+    --background-main--headings-buttons: hsl(0, 0%, 95%);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.main-container{
+    width: auto;
+    height: auto;
+    padding: 60px 20px;
+    background-color: var(--background-main--headings-buttons);
+
+}
+/*
+Secciones
+*/
+.main-container--section{
+    width: auto;
+    min-width: 280px;
+    max-width: 320px;
+    height: 400px;
+    padding: 50px;
+    margin: 0 auto;
+    
+}
+.section-sedans{
+    background-color: var(--background-section-sedans);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.section-suvs{
+    background-color: var(--background-section-suvs);
+}
+.section-luxury{
+    background-color: var(--background-section-luxury);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/*
+Seccion logo
+*/
+.section--logo{
+    display: inline-block;
+    width: 54px;
+    height: 30px;
+    margin-bottom: 25px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.logo--sedans{
+    background-image: url('../images/icon-sedans.svg');
+}
+.logo--suvs{
+    background-image: url('../images/icon-suvs.svg');
+}
+.logo--luxury{
+    background-image: url('../images/icon-luxury.svg');
+}
+
+/*
+Estilos de Fuentes
+*/
+.section-info--title{
+    font-size: 3.8rem;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--background-main--headings-buttons);
+}
+.section-info--text{
+    font-size: 1.5rem;
+    color:var(--paragraphs-transparent);
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+/*
+Estilos botón
+*/
+.section--button{
+    padding: 10px 20px;
+    background-color: var(--background-main--headings-buttons);
+    border-radius:20px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.sedans--button{
+    color: var(--background-section-sedans);
+}
+.suvs--button{
+    color: var(--background-section-suvs);
+}
+.luxury--button{
+    color: var(--background-section-luxury);
+}
+.section--button:hover{
+    background-color: transparent;
+    color: var(--background-main--headings-buttons);
+    border: 2px solid var(--background-main--headings-buttons);
+}
+
+

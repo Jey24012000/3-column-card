@@ -1,0 +1,24 @@
+.main-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.main-container--section{
+    height: 450px;
+    margin: 0;
+}
+.section-sedans{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+}
+.section-luxury{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+}
+.section-info--text{
+    
+    margin-bottom: 100px;
+}
